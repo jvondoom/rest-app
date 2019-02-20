@@ -1,0 +1,14 @@
+.Dish {
+  border: 1px solid #ccc;
+  padding: 10px;
+  width: 30%;
+}
+
+.Dish img {
+  display: block;
+  width: 100%;
+}
+
+.Dish h3 {
+  text-align: center;
+}

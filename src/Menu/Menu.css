@@ -1,0 +1,9 @@
+.Menu h2 {
+  text-align: center;
+}
+
+.Menu .dishes {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}

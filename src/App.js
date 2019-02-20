@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import Closed from './Closed/Closed';
+import Open from './Open/Open';
+
 class App extends Component {
   state = {
     open: false
@@ -17,11 +20,11 @@ class App extends Component {
   renderOpenContent = () => {
     if (this.state.open) {
       return (
-        <p>We are open!</p>
+        <Open />
       );
     } else {
       return (
-        <p>We are closed!</p>
+        <Closed />
       );
     }
   }
@@ -29,11 +32,11 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Restaurant</h1>
+        <button onClick={this.openRest}>Click</button>
+        <h1 className="title">Restaurant</h1>
         
         {this.renderOpenContent()}
 
-        <button onClick={this.openRest}>Click</button>
       </div>
     );
   }
